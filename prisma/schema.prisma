@@ -1,0 +1,52 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql" // Change this to your database provider
+  url      = env("POSTGRES_PRISMA_URL")
+}
+
+model User {
+  id                   Int       @id @default(autoincrement())
+  name                 String
+  email                String    @unique
+  password             String
+  phoneNumber          String?   // Optional phone number
+  address              String?   // Optional address
+  employment           String?   // Optional employment details
+  salary      String?   // Optional financial status
+  dateOfBirth          DateTime? // Optional date of birth
+  emailVerified        Boolean   @default(false)
+  createdAt            DateTime  @default(now())
+  paymail        String?
+  updatedAt            DateTime  @updatedAt
+}
+
+model Donor {
+  id                   String       @id 
+  donor_id String
+  charity_id String
+  amount String
+  proof String?
+}
+
+model Charity {
+  id             String   @id @default(cuid())
+  name           String
+  email          String   @unique
+  password       String
+  organization   String
+  mission        String?
+  projects       String?
+  financialInfo  String?
+  paymail        String?
+  emailVerified  Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+
+

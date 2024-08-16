@@ -1,0 +1,44 @@
+{
+    "version": 9,
+    "compilerVersion": "1.19.2+commit.c3a20a0",
+    "contract": "Donation",
+    "md5": "5fde83b4a910528cc70d81f3a5e6e867",
+    "structs": [],
+    "library": [],
+    "alias": [],
+    "abi": [
+        {
+            "type": "function",
+            "name": "unlock",
+            "index": 0,
+            "params": [
+                {
+                    "name": "donor",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "charity",
+                    "type": "bytes"
+                },
+                {
+                    "name": "donor",
+                    "type": "int"
+                },
+                {
+                    "name": "amount",
+                    "type": "int"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///D:/tsoc/truecharity/artifacts/charity.scrypt",
+    "hex": "<charity><donor><amount>517954798777777777",
+    "sourceMapFile": ""
+}

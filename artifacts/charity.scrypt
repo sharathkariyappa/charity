@@ -1,0 +1,9 @@
+
+contract Donation {
+  bytes charity;
+  bytes donor;
+  int amount;
+  public function unlock(bytes donor) {
+    require(this.donor == donor);
+  }
+}
