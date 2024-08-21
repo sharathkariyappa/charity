@@ -4,7 +4,8 @@ import { ZodError } from 'zod';
 import { prisma } from '$lib/server/prisma.js';
 import bcrypt from 'bcryptjs';
 import { signJWT } from '$lib/server/token.js';
-import { JWT_EXPIRES_IN } from '$env/static/private';
+const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN;
+
 
 export async function POST({ request, cookies }) {
 	try {
