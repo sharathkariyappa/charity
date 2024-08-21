@@ -1,4 +1,4 @@
-import { JWT_SECRET_KEY } from '$env/static/private';
+const JWT_SECRET_KEY = 'jweiodjqncjk23f9fjsivkrnv4389pvhkrnvjklenrfwefewv';
 import { SignJWT, jwtVerify } from 'jose';
 
 export const signJWT = async (payload: { sub: string }, options: { exp: string }) => {
