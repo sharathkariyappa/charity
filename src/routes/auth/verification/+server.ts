@@ -1,5 +1,5 @@
 import { RegisterUserSchema, type RegisterUserInput } from '$lib/validations/user.schema.js';
-import { GOOGLE_EMAIL } from "$env/static/private";
+const GOOGLE_EMAIL = process.env.GOOGLE_EMAIL;
 import transporter from "$lib/emailSetup.server.js";
 
 import { json } from '@sveltejs/kit';
