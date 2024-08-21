@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
-import { GOOGLE_EMAIL, GOOGLE_EMAIL_PASSWORD } from "$env/static/private";
+const GOOGLE_EMAIL = process.env.GOOGLE_EMAIL;
+const GOOGLE_EMAIL_PASSWORD = process.env.GOOGLE_EMAIL_PASSWORD;
 
 let transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
