@@ -93,7 +93,7 @@
 
 </div>
 
-<div  class="h-[100vh] bg-base-100 flex flex-col justify-center items-center text-base-content p-5" >
+<!-- <div  class="h-[100vh] bg-base-100 flex flex-col justify-center items-center text-base-content p-5" >
 <fieldset class="w-[100%] ring-1 border-[1px] p-4 border-black shadow-md shadow-black  rounded-md" >
   <legend>Contact us</legend>
 <label class="input input-bordered w-[70%] flex items-center gap-2">
@@ -115,4 +115,4 @@
   class="textarea  h-[200px]  textarea w-[70%] border-[.1px] border-black mt-6"></textarea>
 
 </fieldset>
-</div>
+</div> -->

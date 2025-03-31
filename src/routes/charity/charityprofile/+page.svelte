@@ -116,6 +116,7 @@
         <th>Satoshis Donated</th>
         <th>TxID</th>
         <th>Upload Proof</th>
+        <!-- <th>total Amount</th> -->
       </tr>
     </thead>
     <tbody class="w-[100%]">
@@ -125,6 +126,7 @@
         <td>{i + 1}</td>
         <td>{donor.donor_id}</td>
         <td>{donor.amount}</td>
+        <!-- <td>{donor.amount}</td> -->
         <td><a href="https://whatsonchain.com/tx/{donor.id}">click here to see</a></td>
         <td>
           <form on:submit={e => handleSubmit(e, donor.id)}>

@@ -7,7 +7,7 @@ import artifact from "../../../../artifacts/charity.json";
 const provider = new DefaultProvider({ network: bsv.Networks.mainnet });
 const signer = new NeucronSigner(provider);
 
-await signer.login("mominrauf33@gmail.com", "Momin123000"); // Replace with actual credentials
+// await signer.login("mominrauf33@gmail.com", "Momin123000"); // Replace with actual credentials
 await Donation.loadArtifact(artifact);
 let instance: Donation;
 
