@@ -14,7 +14,7 @@
 
  
   // import Wallet from './wallet/+page.svelte';
-  let loader  = false;
+  let loader;
 
   const randomImages = ["https://img.freepik.com/free-photo/people-holding-rubber-heart_1150-18576.jpg?t=st=1722460989~exp=1722464589~hmac=d2ec29336b30bd1ccf8fcae1be89b8ff76f29bc2b3c0586376434d70dd4b7f0a&w=826","https://img.freepik.com/free-photo/beggars-sitting-street-with-homeless-messages-please-help_1150-22965.jpg?t=st=1722461089~exp=1722464689~hmac=cd9e075d75ab1450bd8eba406eb9878d8b62c85c4dd81bf53d48955db1130254&w=826","https://img.freepik.com/free-photo/portrait-volunteers-workshop_1170-1801.jpg?t=st=1722461149~exp=1722464749~hmac=08a1589a2d01611bf89dedb56710ec33106dd7f7975b5f49ad1b27d4ea9ea26d&w=826","https://img.freepik.com/free-photo/friends-volunteers-stack-boxes-inspection-humanitarian-aid-donations-poor_1157-46648.jpg?t=st=1722461182~exp=1722464782~hmac=25150c6e147e8b0c23bcc20360d627b0b6bbba7b0ea4fb44b2efc2a0bb8c4762&w=826","https://img.freepik.com/free-photo/guy-girl-with-check-boxes-volunteers-masks-boxes-with-humanitarian-aid_1157-46587.jpg?t=st=1722461209~exp=1722464809~hmac=d4f3226811c6afc9ba23933c56b87447a7b6d04670ce3db3d80117d5f1f672b6&w=826"]
   import {
